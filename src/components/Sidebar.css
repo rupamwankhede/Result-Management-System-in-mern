@@ -1,0 +1,96 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(135deg, #4e73df, #224abe);
+  position: fixed;
+  top: 60px; /* after navbar */
+  left: 0;
+  padding-top: 20px;
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hide-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hide-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Main content moves based on sidebar */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.full-width {
+  margin-left: 20px;
+}
+
+/* Toggle button style */
+.toggle-button {
+  position: fixed;
+  top: 65px;
+  left: 10px;
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.toggle-button:hover {
+  background-color: #224abe;
+}

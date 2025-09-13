@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: darkred;
 }
 
 .App-link {
@@ -35,4 +35,172 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+/* App.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #004085;
+  padding: 15px 0;
+  color: darkcyan;
+  font-weight: bold;
+}
+
+nav a {
+  color: darkgoldenrod;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+  background-color: #0069d9;
+  color: lightblue;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004085;
+}
+
+/* Container Styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.card h2 {
+  color: #004085;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0069d9;
+}
+
+/* Page-specific Styles */
+.home-banner {
+  background-color: #004085;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.home-banner h1 {
+  font-size: 2.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #004085;
+  margin-bottom: 20px;
+}
+/* Hover Effect on Cards */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Buttons */
+button:hover {
+  background-color: #004085;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+/* Navbar fixed at the top */
+nav {
+  background-color: #004085;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  margin-top: 80px; /* Adjust to give space for the navbar */
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* App.css */
+
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 220px; /* Same width as sidebar */
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is closed */
+.sidebar.closed + .main-content {
+  margin-left: 0;
 }
